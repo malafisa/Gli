@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link type="text/css" href="style2.css" rel="stylesheet"/>
+	<title>Glimmer Home Page | Responsive Website</title>
+</head>
+<body>
+
+	<section class="banner">
+		<header>
+		<div class="toggle"></div>
+	</header>
+
+	<div class="content">
+		<img src="paint2.png" class="textimg">
+		<p>Wondering, "When will I get my period?" GLIMMER Always knows! Our easy tracking tool helps map out your cycle for months. Plan a period-free beach trip or a big event like a wedding-Or track your peak ovulation times if you're trying.</p>
+		<a href="tools/main.html" class="btn">Track Now</a>
+	</div>
+
+	
+	</section>
+
+	<ul class="navigation">
+		<li><a href="Homepage.html">Home</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="main.html">Period Calculator</a></li>
+		<li><a href="Index.html">Blog</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+	</ul>
+
+	<script>
+		let menuToggle=document.querySelector('.toggle');
+		let navigation=document.querySelector('.navigation');
+		menuToggle.onclick=function(){
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+
+	<footer>
+      <div class = "social-links">
+      	<link rel="stylesheet" type="text/css" href="homey.css">
+        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "#"><i class = "fab fa-twitter"></i></a>
+        <a href = "#"><i class = "fab fa-instagram"></i></a>
+        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>Glimmer</span>
+    </footer>
+
+
+</body>
+	</html>

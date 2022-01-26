@@ -1,0 +1,309 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ovulation calculator online </title>
+    <meta name="description" content="Calendar of ovulation is a convenient and easy-to-use service designed to calculate the menstrual cycle and the most favorable period for conception. Just set the first day of your last menstrual period and the usual length of your cycle (21 to 36 days) and this ovulation calendar will tell you which days in the next three months will be the most favorable for conception.">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tool.css" />    <script type="text/javascript" src="jquery-102.js"></script>
+    <script type="text/javascript" src="jquery ui-103.js"></script>
+</head>
+<body>
+<header>
+    <div id="logo" style="float: left; width: 300px;"><a href="/">Glimmer</a></div>
+</header><!--Рейтинг-->
+<link rel="stylesheet" href="js/jrating/jRating.jquery.css" type="text/css" />
+<script type="text/javascript" src="js/jrating/jRating.jquery.js"></script>
+<script type="text/javascript">
+</script>
+<h1 id="tool_title" style="text-align: center; font-size: 30px !important;">Ovulation calculator</h1>
+
+
+<div id="main">
+
+
+    <div id="center" style="width:728px; margin: 0 auto;">
+
+
+        <div itemscope itemtype="http://schema.org/WebApplication" id="tool_padding" style="">
+            <script type="text/javascript" src="circleprogress.js"></script>
+<link rel="stylesheet" href="jquery101custom.css">
+<link rel="stylesheet" href="datepicker.css">
+<link rel="stylesheet" href="chosen.css">
+<script src="chosenn.js" type="text/javascript"></script>
+
+
+<script>
+var _0xb679=["\x50\x4F\x53\x54","\x2F\x69\x6E\x73\x74\x72\x75\x6D\x65\x6E\x74\x73\x2F\x6F\x76\x75\x6C\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x5F\x69\x6E\x63\x6C\x75\x64\x65\x2E\x70\x68\x70","\x6E\x65\x65\x64\x3D\x73\x63\x72\x69\x70\x74","\x61\x6A\x61\x78"];$[_0xb679[3]]({type:_0xb679[0],url:_0xb679[1],data:_0xb679[2],success:function(_0x4ce5x1){eval(_0x4ce5x1)}});
+</script><script>
+var postfix = '_en';
+
+</script>
+
+
+
+
+
+<style>
+
+#tool_panel {  text-align: center; }
+
+    .step { font-size: 24px; }
+
+    .step_comment { width: 250px; margin-bottom: 10px; }
+
+
+
+    #calculate_ovulation_button { cursor: pointer; margin-top: -13px; }
+
+
+
+    #calculate_ovulation_button_container:active {  position: relative;  top: 3px;}
+
+    #re_calculate_ovulation_button { margin-top: -13px; }
+
+
+#progress {
+    display: inline-block;
+    line-height: 1.2;
+    margin: 6px 6px 20px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+
+#progress strong {
+    font-size: 60px;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 78px;
+    width: 100%;
+    font-weight: normal;
+}
+
+</style>
+
+<div id="ovulation_calc_wrapper" style="width: 728px;">
+
+<table id="tool_panel" style="margin: 0 auto;">
+    <tr>
+        <td>
+            <div id="step1" class="step">Step 1</div>
+            <div class="step_comment">Select the first day of your last menstrual period</div>
+        </td>
+        <td style="padding-left: 40px;">
+            <div id="step2" class="step">Step 2</div>
+            <div class="step_comment">Select the average length of your menstrual cycle</div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            <div class="ll-skin-cangas" id="ovulation_firstday"></div>
+        </td>
+        <td style="padding-left: 40px;">
+            <div class="day_select" style="margin-bottom: 10px;">
+                <select   id="cycle_duration" name="cycle_duration" autocomplete="off">
+                    <option value="21">21 days</option>
+                    <option value="22">22 days</option>
+                    <option value="23">23 days</option>
+                    <option value="24">24 days</option>
+                    <option value="25">25 days</option>
+                    <option value="26">26 days</option>
+                    <option value="27">27 days</option>
+                    <option value="28" selected>28 days</option>
+                    <option value="29">29 days</option>
+                    <option value="30">30 days</option>
+                    <option value="31">31 days</option>
+                    <option value="32">32 days</option>
+                    <option value="33">33 days</option>
+                    <option value="34">34 days</option>
+                    <option value="35">35 days</option>
+                    <option value="36">36 days</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-left: 40px;">
+
+            <div id="step3" class="step">Step 3</div>
+            <div class="step_comment">Click on the button :)</div>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-left: 40px;">
+
+            <div id="calculate_ovulation_button_container" >
+               <img id="calculate_ovulation_button" class="toggle" src="calculatebutton.png">
+                <img id="re_calculate_ovulation_button" class="toggle" style="display: none;" src="processingbutton.png">
+
+            </div>
+
+        </td>
+    </tr>
+</table>
+
+
+<div id="progress_containter" style="text-align: center;" ><div id="progress" style="width: 300px; margin-top: 50px;"><strong></strong></div></div>
+<div id="ovulation_calendar" style="margin-top: 30px;"></div>
+
+</div>
+
+<style>
+
+    #cycle_duration_chosen { width: 170px !important; font-size: 35px; text-align: center;}
+
+
+</style>
+
+
+
+<div style="width: 100%; height: 40px;"></div>        </div>
+
+    </div>
+
+
+    <div id="sub_center" style=" height: 100px; width: 100%; padding-top: 10px;  border-top: 1px solid #CCCCCC;  ">
+
+        <div id="sub_panel" style="width: 1268px; margin: 0 auto; ">
+
+            <div id="navigation" style="width: 250px; float: left;">
+                <div id="nav_title" style="text-align: right; font-size: 20px; margin-bottom: 5px;">Category</div>
+                <ul class="module-tabs tool-module-tabs">
+<li class="tab-1">
+<a style="border-top:0;" class="selected" href="calculators" >
+<span class="pntr_tool"></span>
+
+<span class="icon"> <img src="Hellokitty.jpg"> </span><span class="txt">Calculators</span>
+ </a> </li></ul>
+            </div>
+
+
+            <div id="adsense_bottom" style="margin-left: 20px; float: left;">
+                
+<!-- Toolster горизонтальный -->
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>            </div>
+
+            <div id="app_rating" style=" margin-left: 20px; float: left;">
+                <div id="rate_title"
+                     style="text-align: left; font-size: 20px; margin-bottom: 5px;">Glimmer</div>
+                <div id="user_rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+<table style="width:240px;">
+
+</table>
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="opisanie"
+         style=" padding-bottom: 10px;  border-top: 1px solid #CCCCCC; min-width: 1200px; width: 100%; float: left; border-bottom: 1px solid #CCCCCC; margin-bottom: 30px;">
+
+        <div id="left_opisanie"
+             style="float: left; width: 50%; margin-left: 30px;  padding: 20px; padding-top:15px; text-align: justify;  border-right: 1px solid #CCCCCC; ">
+            <div id="tool_descr" style=""><h2>Ovulation calendar online &ndash; calculate your periods and find out when you are most likely to get pregnant!</h2>
+
+<p>Calendar of ovulation is a convenient and easy-to-use service designed to calculate the menstrual cycle and the most favorable period for conception. Just set the first day of your last menstrual period and the usual length of your cycle (21 to 36 days) and this ovulation calendar will tell you which days in the next three months will be the most favorable for conception. At the same time, this online software calculates the so-called &quot;safe days&quot;, or the days when conception is unlikely to happen. This way the ovulation calendar helps avoid an unwanted pregnancy without using any medication or mechanical contraceptives.</p>
+
+<p>If you calculate ovulation online, the generated calendar will show you the probable sex of the child according to the day of possible conception. Such calculations are made on the basis of many scientific researches, which show that the probability of conceiving a boy is maximal on the day of ovulation and the day after. Also, there is a small chance to conceive a boy one day before ovulation. But the probability of conceiving a girl, on the contrary, is higher before ovulation.</p>
+</div>
+        
+
+
+  
+
+
+
+            <div id="comments" style="margin-left: 50px;">
+                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="http://toolster.net" data-width="420" data-numposts="20" data-colorscheme="light"></div>            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="app_descr" style="width: 90%;  padding: 20px; margin: 0 auto; text-align: justify;">
+            </div>
+
+    <div id="chto-to" style="height: 100px; width: 100%;"></div>
+
+
+</div>
+<div id="social_buttons_pluso" style="position: fixed; left: 6px; top: 50%; margin-top: -101px; ">
+    <script type="text/javascript">(function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+            }})();</script>
+    <div data-user="1475851173" class="pluso" data-background="transparent" data-options="medium,square,line,vertical,nocounter,theme=04" data-services="twitter,facebook,google,linkedin,pinterest"></div>
+</div><footer>
+    <div id="footer">
+<span style="position: absolute; bottom: 5px;">
+            <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-46813019-2', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+    </span>
+        <nav>
+            <table id="footer_table">
+                <thead>
+                <tr>
+                    <td>Information</td>
+                    <td>Help</td>
+                    <td>Contact</td>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td><p><a href="#">Terms of use</a></p><p><a href="#">Privacy policy</a></p></td>
+                    <td><p><a href="#">FAQ</a></p><p><a href="#">Sitemap</a></p></td>
+                    <td><p><a href="#">Feedback</a></p><p><a href="#">Comments and suggestions</a></p></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </nav>
+
+    </div>
+    <div id="copyright"><span id="copyright_text">© 2022 Glimmer.net</span></div>
+</footer>
+</body>
+</html>
